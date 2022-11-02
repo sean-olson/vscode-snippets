@@ -1,0 +1,27 @@
+{
+	"PWA Head Tags": {
+		"prefix": "pwa-head",
+		"body": [
+			"<link rel=\"manifest\" href=\"/manifest.json\">",
+			"",
+			"<!-- apple-specific meta & link tags -->",
+			"<meta name=\"apple-mobile-web-app-capable\" content=\"yes\">",
+			"<meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\">",
+			"<meta name=\"apple-mobile-web-app-status-bar-title\" content=\"$1\">",
+			"<link rel=\"apple-touch-icon\" href=\"/$2-48x48.png\" sizes=\"48x48\">",
+			"<link rel=\"apple-touch-icon\" href=\"/$3-60x60.png\" sizes=\"60x60\">",
+			"<link rel=\"apple-touch-icon\" href=\"/$4-72x72.png\" sizes=\"72x72\">",
+			"<link rel=\"apple-touch-icon\" href=\"/$5-76x76.png\" sizes=\"76x76\">",
+			"<link rel=\"apple-touch-icon\" href=\"/$6-114x114.png\" sizes=\"114x114\">",
+			"<link rel=\"apple-touch-icon\" href=\"/$7-120x120.png\" sizes=\"120x120\">",
+			"<link rel=\"apple-touch-icon\" href=\"/$8-144x144.png\" sizes=\"144x144\">",
+			"<link rel=\"apple-touch-icon\" href=\"/$9-152x152.png\" sizes=\"152x152\">",
+			"<link rel=\"apple-touch-icon\" href=\"/$10-180x180.png\" sizes=\"180x180\">",
+			"",
+			"<!-- explorer-specific meta & link tags -->",
+			"<meta name=\"msapplication-TileImage\" content=\"$11-144x144.png\">",
+			"<meta name=\"msapplication-TileColor\" content=\"#$12\">",
+			"<meta name=\"theme-color\" content=\"#$13\">",
+		]
+	}
+}
