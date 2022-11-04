@@ -5,5 +5,49 @@
 			"const {$2} = require('$1')"
 		],
 		"description": "Basic require statement"
-	}	
+	},
+	"Promise declaration": {
+		"prefix": "promise_declaration",
+		"body": [
+			"return $1new Promise((resolve, reject) => {",
+			"  async_method_call$2({})",
+			"    .then((result) => {",
+			"      $3",			
+			"      resolve();", 
+			"    })",
+			"    .catch((err) => {",
+			"      $4reject();",
+			"    })",
+			"});"
+		],
+		"description": "Promise declaration"
+	},
+	"Async call with Promise": {
+		"prefix": "promise_call",
+		"body": [
+			"  async_method_call$1({})",
+			"    .then((result) => {",
+			"      $2",			
+			"      resolve();", 
+			"    })",
+			"    .catch((err) => {",
+			"      $3reject();",
+			"    });"
+		],
+		"description": "Async call with Promise"
+	},
+	"Promise.all Snip": {
+		"prefix": "promise_all_snip",
+		"body": [
+			"  Promise.all(promise_array$1)",
+			"    .then((results) => {",
+			"      $2",			
+			"      resolve();", 
+			"    })",
+			"    .catch((err) => {",
+			"      $3reject();",
+			"    });"
+		],
+		"description": "Promise.all Snip"
+	}			
 }
