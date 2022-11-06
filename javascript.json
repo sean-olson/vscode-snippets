@@ -6,6 +6,45 @@
 		],
 		"description": "Basic require statement"
 	},
+	"Fetch GET Call": {
+		"prefix": "fetch_get",
+		"body": [
+			"fetch('$1')",
+		    ".then((response) => {",
+		    "  return response.json();",
+		    "})",
+		    ".then((data) => {",
+		    "  resolve({ status: 'OK', data });",
+		    "})",
+		    ".catch((err) => {",
+		    "  reject({ err });",
+		    "});"
+		],
+		"description": "fetch-get snip"
+	},
+	"Fetch POST Call": {
+		"prefix": "fetch_post",
+		"body": [
+			"fetch('$1', {",
+			"  method: 'POST',",
+			"  headers: {",
+			"    'Content-Type': 'application/json',",
+			"    'Accept': 'application/json'",
+			"  },",
+			"  body: JSON.stringify({$2})",
+			"  })",
+			"  .then((response) => {",
+			"    return response.json();",
+			"  })",
+			"  .then((data) => {",
+			"    resolve({ status: 'OK', data });",
+			"  })",
+			"  .catch((err) => {",
+			"    reject({ err });",
+			"  });"
+		],
+		"description": "fetch-post snip"
+	},
 	"Promise declaration": {
 		"prefix": "promise_declaration",
 		"body": [
