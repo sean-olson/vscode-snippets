@@ -52,10 +52,11 @@
 			"  async_method_call$2({})",
 			"    .then((result) => {",
 			"      $3",			
-			"      resolve();", 
+			"      resolve($4);", 
 			"    })",
 			"    .catch((err) => {",
-			"      $4reject();",
+			"      $5",				
+			"      reject({ err$6 });",
 			"    })",
 			"});"
 		],
@@ -64,13 +65,14 @@
 	"Async call with Promise": {
 		"prefix": "promise_call",
 		"body": [
-			"  async_method_call$1({})",
+			"  async_method_call$1({$2})",
 			"    .then((result) => {",
-			"      $2",			
-			"      resolve();", 
+			"      $3",			
+			"      resolve($4);", 
 			"    })",
 			"    .catch((err) => {",
-			"      $3reject();",
+			"      $5",				
+			"      reject({ err$6 });",
 			"    });"
 		],
 		"description": "Async call with Promise"
@@ -81,10 +83,11 @@
 			"  Promise.all(promise_array$1)",
 			"    .then((results) => {",
 			"      $2",			
-			"      resolve();", 
+			"      resolve($3);", 
 			"    })",
 			"    .catch((err) => {",
-			"      $3reject();",
+			"      $4",				
+			"      reject( { err$5 });",
 			"    });"
 		],
 		"description": "Promise.all Snip"
