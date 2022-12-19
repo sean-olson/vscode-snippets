@@ -2,10 +2,24 @@
 	"AMD require statement": {
 		"prefix": "require",
 		"body": [
-			"const {$2} = require('$1')"
+			"const { $2 } = require('$1')"
 		],
 		"description": "Basic require statement"
 	},
+	"JS Module Import": {
+		"prefix": "import",
+		"body": [
+			"import { $2 } from '$1';"
+		],
+		"description": "JS Module Import"
+	},
+	"JS Module Export": {
+		"prefix": "export",
+		"body": [
+			"export { $1 }; "
+		],
+		"description": "JS Module Export"
+	},			
 	"Fetch GET Call": {
 		"prefix": "fetch_get",
 		"body": [
@@ -68,11 +82,9 @@
 			"  async_method_call$1({$2})",
 			"    .then((result) => {",
 			"      $3",			
-			"      resolve($4);", 
 			"    })",
 			"    .catch((err) => {",
-			"      $5",				
-			"      reject({ err$6 });",
+			"      $4",				
 			"    });"
 		],
 		"description": "Async call with Promise"
@@ -83,11 +95,9 @@
 			"  Promise.all(promise_array$1)",
 			"    .then((results) => {",
 			"      $2",			
-			"      resolve($3);", 
 			"    })",
 			"    .catch((err) => {",
-			"      $4",				
-			"      reject( { err$5 });",
+			"      $3",				
 			"    });"
 		],
 		"description": "Promise.all Snip"
