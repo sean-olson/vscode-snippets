@@ -101,5 +101,24 @@
 			"    });"
 		],
 		"description": "Promise.all Snip"
-	}			
+	},
+	"React Component Shell": {
+		"prefix": "react_component_shell",
+		"body": [
+			"import React from 'react';",
+			"",
+			"import './$1.css';",
+			"",
+			"const $2 = (props) => {",
+			"",
+			"  return (",
+			"    <div></div>",
+			"  )",
+			"",
+			"};",
+			"",
+			"  export default $3;"
+		],
+		"description": "React Component Shell"
+	}				
 }
