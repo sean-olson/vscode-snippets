@@ -21,7 +21,7 @@
 			"<!-- explorer-specific meta & link tags -->",
 			"<meta name=\"msapplication-TileImage\" content=\"$11-144x144.png\">",
 			"<meta name=\"msapplication-TileColor\" content=\"#$12\">",
-			"<meta name=\"theme-color\" content=\"#$13\">",
+			"<meta name=\"theme-color\" content=\"#$13\">"
 		]
 	}
 }
