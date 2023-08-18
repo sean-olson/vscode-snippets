@@ -1,5 +1,5 @@
 {
-	"AMD require statement": {
+	"CommonJS require statement": {
 		"prefix": "require",
 		"body": [
 			"const { $2 } = require('$1')"
