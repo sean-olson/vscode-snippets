@@ -2,7 +2,7 @@
 	"CommonJS require statement": {
 		"prefix": "require",
 		"body": [
-			"const { $2 } = require('$1')"
+			"const { $2 } = require('$1');"
 		],
 		"description": "Basic require statement"
 	},
